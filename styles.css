@@ -1,0 +1,301 @@
+#logo {
+    height: 100px; 
+    margin-right: 20px; 
+    vertical-align: middle; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+nav {
+    background-color: #1A1A1A;
+    padding: 15px 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav ul li a {
+    display: block;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #FFD700;
+    color: #000;
+}
+
+
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('background.jpg'); /* Add a background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fallback color */
+    animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+header button {
+    padding: 15px 30px;
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header button:hover {
+    background-color: #FFC107;
+    transform: scale(1.05);
+}
+
+
+main {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    animation: fadeIn 1.3s ease-in-out;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+#highlights .highlight-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.highlight {
+    flex: 1 1 30%;
+    padding: 40px;
+    background-color: #FFF;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.highlight h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.highlight p {
+    font-size: 18px;
+    color: #666;
+}
+
+
+#testimonials .testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.testimonial {
+    flex: 1 1 30%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+#cta-newsletter {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FFD700;
+    border-radius: 15px;
+    margin-bottom: 60px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#cta-newsletter h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#cta-newsletter p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#cta-newsletter input[type="email"] {
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 15px;
+    width: 300px;
+    max-width: 100%;
+}
+
+#cta-newsletter button {
+    padding: 12px 25px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#cta-newsletter button:hover {
+    background-color: #555;
+}
+
+
+#call-to-action {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#call-to-action h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#call-to-action p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#call-to-action button {
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#call-to-action button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    font-size: 14px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #FFC107;
+}
+
+main, footer {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .highlight-container, .testimonial-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
